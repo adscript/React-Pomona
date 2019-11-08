@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 // import {loadTodo} from '../actions/todo';
 import Register from './Register';
 import LoginForm from './LoginForm';
-import "../stylesheets/cover.css";
 
 class Login extends Component {
   state = {
@@ -35,10 +34,10 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="row align-self-center w-100">
+      <div className="row align-self-center w-100 mt-5">
         <div className="col-6 mx-auto">
-          <div className="card">
-            <div className="card-header">
+          <div className="card border-dark">
+            <div className="card-header border-dark bg-light">
               <div className="row">
                 <div className="col">
                   <button className={(!this.state.login ? "btn btn-outline-primary text-primary " : "bg-primary text-white ") + "btn-lg btn-block login text-center"} onClick={this.handleLoginTab} > Login </button>

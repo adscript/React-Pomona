@@ -1,15 +1,20 @@
-export const LOAD_TODOS = 'LOAD_TODOS';
 export const LOAD_TODOS_SUCCESS = 'LOAD_TODOS_SUCCESS';
 export const LOAD_TODOS_FAILURE = 'LOAD_TODOS_FAILURE';
 
-export const ADD_TODOS = 'ADD_TODOS';
 export const ADD_TODOS_SUCCESS = 'ADD_TODOS_SUCCESS';
 export const ADD_TODOS_FAILURE = 'ADD_TODOS_FAILURE';
 
 export const EDIT_TODOS = 'EDIT_TODOS';
 export const EDIT_TODOS_SUCCESS = 'EDIT_TODOS_SUCCESS';
 export const EDIT_TODOS_FAILURE = 'EDIT_TODOS_FAILURE';
+export const EDIT_ON = 'EDIT_ON';
+export const EDIT_OFF = 'EDIT_OFF';
 
 export const DELETE_TODOS = 'DELETE_TODOS';
 export const DELETE_TODOS_SUCCESS = 'DELETE_TODOS_SUCCESS';
 export const DELETE_TODOS_FAILURE = 'DELETE_TODOS_FAILURE';
+
+
+
+
+

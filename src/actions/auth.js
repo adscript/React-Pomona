@@ -1,5 +1,5 @@
-// import { push } from "connected-react-router";
-// import { loadDetail } from "./detail";
+import { push } from "connected-react-router";
+import { loadTodos } from "./todo";
 
 const API_URL = "https://pomonatodo.herokuapp.com";
 
@@ -35,6 +35,7 @@ export const postRegister = user => {
                     dispatch(registerError(data.data.message));
                 } else {
                     localStorage.setItem("token", data.data.token);
+                    dispatch(push('/'))
                     dispatch(loginSuccess(data.data.token));
                 }
             }).catch(err => console.log(err))
@@ -59,6 +60,7 @@ export const postLogin = user => {
                 } else {
                     localStorage.setItem("token", data.data.token)
                     dispatch(loginSuccess(data.data.token))
+                    dispatch(loadTodos())
                 }
             }).catch(err => console.log(err))
     }

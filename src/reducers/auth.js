@@ -12,6 +12,9 @@ export default function auth(state = {}, action) {
             return { message: action.message }
 
         default:
-            return state;
+            if (localStorage.token)
+                return { token: localStorage.token }
+            else
+                return state;
     }
 }
